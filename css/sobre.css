@@ -1,0 +1,122 @@
+.sobre {
+    grid-column: 1 / -1;
+    display: grid;
+    padding: 40px 20px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.sobremim {
+    margin-bottom: 60px;
+}
+
+.sobremim .subtitulo{
+    color: #CCCCCC;
+}
+
+.sobremim-texto {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    max-width: 30ch;
+    color: #4D4D4D;
+    position: relative;
+}
+
+.sobremim-texto::before {
+    content: "";
+    display: block;
+    background: url("../img/detalhe1.svg") no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 260px;
+}
+
+@media (max-width: 800px) {
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-content: center;
+    }
+
+     .sobremim .subtitulo{
+        color: #1A1A1A;
+    }
+
+    .sobremim-texto {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .sobremim-texto::before {
+        background: url("../img/detalhe2.svg") no-repeat center;
+        left: 180px;
+    }
+}
+
+
+
+.sobremim-texto strong {
+    color: #1A1A1A;
+}
+
+.empresa {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    display: grid;
+    padding: 40px 20px;
+    margin: 0 auto;
+    align-items: center;
+    place-items: start;
+    gap: 10px 20px;
+    border-bottom: 5px solid #AB2C34;
+}
+
+@media (max-width: 500px) {
+    .empresa {
+        border-bottom: none;
+    }
+}
+
+.empresa-ano {
+    grid-row: 1 / 3;
+    margin-right: 60px;
+    color: #4D4D4D;
+}
+
+.empresa-titulo {
+    font-size: 1.3rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+}
+
+.empresa-texto {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #4D4D4D;
+    max-width: 40ch;
+}
+
+.empresa-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.empresa-habilidades li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #CCCCCC;
+    padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+    .empresa-texto{
+        text-align: left;
+    }
+}
