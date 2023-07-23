@@ -56,6 +56,12 @@
     }
 }
 
+@media (max-width: 400px){
+    .sobremim-texto::before{
+        display: none;
+    }
+}
+
 
 
 .sobremim-texto strong {
@@ -72,13 +78,7 @@
     align-items: center;
     place-items: start;
     gap: 10px 20px;
-    border-bottom: 5px solid #AB2C34;
-}
-
-@media (max-width: 500px) {
-    .empresa {
-        border-bottom: none;
-    }
+    
 }
 
 .empresa-ano {
@@ -113,10 +113,21 @@
     border-radius: 4px;
     background: #CCCCCC;
     padding: 5px 10px;
+    border-bottom: 4px solid #AB2C34;
 }
 
 @media (max-width: 600px) {
     .empresa-texto{
         text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .empresa {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .empresa-cargo {
+        font-weight: 100;
     }
 }

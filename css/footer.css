@@ -39,6 +39,7 @@
     left: -45px;
 }
 
+
 ul .email::before{
     background: url("../img/email.svg") no-repeat center center;
 }
@@ -73,5 +74,15 @@ ul .rede::before{
 
     .footer-contato li a{
         border-bottom: 4px solid #AB2C34;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-texto {
+        font-size: 1.2rem;
+    }
+
+    .footer-contato li {
+        font-size: 0.85rem;
     }
 }

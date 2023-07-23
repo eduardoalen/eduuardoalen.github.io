@@ -69,4 +69,27 @@
     .introducao h1, p {
         text-align: center;
     }
+
+    .introducao h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .introducao h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .introducao p {
+        font-size: 0.7rem;
+        
+    }
+
+}
+
+@media (max-width: 300px) {
+    .introducao h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }

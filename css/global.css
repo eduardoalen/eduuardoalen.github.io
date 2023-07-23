@@ -45,3 +45,9 @@ img {
         font-size: 3rem;
     }
 }
+
+@media (max-width: 500px) {
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
